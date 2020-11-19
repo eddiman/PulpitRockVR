@@ -67,8 +67,6 @@ Shader "MicroSplat/Terrain" {
       #define _PERTEXBRIGHTNESS 1
       #define _PERTEXCOLORINTENSITY 1
       #define _PERTEXCONTRAST 1
-      #define _PERTEXAOSTR 1
-      #define _PERTEXNORMSTR 1
       #define _PERTEXSMOOTHSTR 1
       #define _BRANCHSAMPLES 1
       #define _BRANCHSAMPLESAGR 1
@@ -3123,7 +3121,7 @@ UNITY_INSTANCING_BUFFER_END(Terrain)
 ENDCG
 
    }
-   Dependency "BaseMapShader" = "Hidden/MicroSplat/Terrain_Base-4481507"
+   Dependency "BaseMapShader" = "Hidden/MicroSplat/Terrain_Base656689453"
    CustomEditor "MicroSplatShaderGUI"
    Fallback "Nature/Terrain/Diffuse"
 }

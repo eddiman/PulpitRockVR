@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts
 {
@@ -60,6 +61,11 @@ namespace Assets.Scripts
                     }
 
                 }
+            }
+
+            if (OVRInput.GetDown(OVRInput.Button.Start))
+            {
+                SceneManager.LoadScene(0, LoadSceneMode.Single);
             }
 
         }
